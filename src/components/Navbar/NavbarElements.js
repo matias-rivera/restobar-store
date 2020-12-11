@@ -10,6 +10,14 @@ export const Nav = styled.nav`
     font-weight: 700;
 `;
 
+export const Logo = styled.img`
+    max-width: 50px;
+    
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+`;
+
 export const NavLink = styled(Link)`
     color: #fff;
     font-size: 2rem;

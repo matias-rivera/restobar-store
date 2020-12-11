@@ -6,6 +6,8 @@ import { productData } from './components/Products/data';
 import Products from './components/Products';
 import Feature from './components/Feature';
 import Footer from './components/Footer';
+import Delivery from './components/Delivery';
+import About from './components/About';
 
 
 
@@ -14,9 +16,10 @@ function App() {
     <Router>
       <GlobalStyle />
       <Hero />
-      <Products heading='Choose your favorite' data={productData} />
+      <Delivery />
       <Feature />
-      <Products heading='Treats for you' data={productData} />
+      <Products heading='Choose your favorite' data={productData} />
+      <About />
       <Footer />
     </Router>
   );
