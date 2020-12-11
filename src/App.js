@@ -8,6 +8,7 @@ import Feature from './components/Feature';
 import Footer from './components/Footer';
 import Delivery from './components/Delivery';
 import About from './components/About';
+import Newsletter from './components/Newsletter';
 
 
 
@@ -17,9 +18,10 @@ function App() {
       <GlobalStyle />
       <Hero />
       <Delivery />
-      <Feature />
       <Products heading='Choose your favorite' data={productData} />
       <About />
+      <Newsletter />
+      <Feature />
       <Footer />
     </Router>
   );
