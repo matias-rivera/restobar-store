@@ -8,9 +8,8 @@ export const DeliveryContainer = styled.div`
     color: #ffff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-
- 
 `;
 
 export const DeliveryH1 = styled.h1`
@@ -28,8 +27,8 @@ export const DeliveryProcess = styled.div`
     display:flex;
     justify-content: center;
     margin: 0 auto;
-    gap: 2rem;
-    padding: 0 2rem;
+    gap: 5rem;
+    padding: 2rem 2rem;
 
     @media screen and (max-width: 768px) {
         flex-direction: column;

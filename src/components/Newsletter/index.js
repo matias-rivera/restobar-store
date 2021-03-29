@@ -18,7 +18,7 @@ import {
 
 const Newsletter = () => {
     return (
-        <NewsletterContainer>
+        <NewsletterContainer id='contact'>
             <Subtitle>Do you want to know more about us?</Subtitle>
             <Title>SUBSCRIBE, EVERY WEEK WE HAVE OFFERS FOR YOU</Title>
             <FormContainer>

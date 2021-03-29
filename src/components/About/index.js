@@ -13,7 +13,7 @@ import {
 
 const About = () => {
     return (
-        <AboutContainer>
+        <AboutContainer id='about'>
             <Image src={ImgPlace} alt='Red Shark Place'/>
             <TextContainer>
                 <TextSub>Food Delivery</TextSub>

@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro'
 import { Link } from 'react-router-dom'
+import { Link as LinkScroll } from 'react-scroll'
 import { FaTimes } from 'react-icons/fa'
 
 export const SidebarContainer = styled.div`
@@ -7,7 +8,9 @@ export const SidebarContainer = styled.div`
     z-index: 999;
     width: 350px;
     height: 100%;
-    background: #ffc500;
+    background-image: linear-gradient(to right, #f9a910, #f8ad21, #f7b12d, #f7b438, #f6b842);
+
+
     display: grid;
     align-items: center;
     top: 0;
@@ -45,7 +48,7 @@ export const SidebarMenu = styled.div`
     }
 `;
 
-export const SidebarLink = styled(Link)`
+export const SidebarLink = styled(LinkScroll)`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,7 +60,7 @@ export const SidebarLink = styled(Link)`
     cursor: pointer;
 
     &:hover {
-        color: #e31837;
+        color: #fff;
         transition: 0.2s ease-in-out;
     }
 `;

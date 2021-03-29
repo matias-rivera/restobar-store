@@ -16,7 +16,7 @@ import {
 const Delivery = () => {
     return (
         <>
-            <DeliveryContainer>
+            <DeliveryContainer id='delivery'>
                 <DeliveryH1>The Best Food Delivery Services</DeliveryH1>
                 <DeliveryP>How it Works</DeliveryP>
                 <DeliveryProcess>
@@ -37,7 +37,6 @@ const Delivery = () => {
                     </Item>
                 </DeliveryProcess>
                 <DeliveryButton>Place your Order</DeliveryButton>
-
             </DeliveryContainer>
 
         </>

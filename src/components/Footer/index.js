@@ -26,7 +26,7 @@ const Footer = () => {
                 <FooterWrap>
                     <SocialMedia>
                         <SocialMediaWrap>
-                            <SocialLogo to='/'>Pizza</SocialLogo>
+                            <SocialLogo to='/'>RedShark</SocialLogo>
                             <SocialIcons>
                                 <SocialIconLink href='/' target="_blank" aria-label='Facebook' rel='noopener noreferrer'>
                                     <FaFacebook />

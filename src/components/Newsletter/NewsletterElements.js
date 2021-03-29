@@ -5,7 +5,7 @@ export const NewsletterContainer = styled.div`
     padding: 5rem calc((100vw - 1100px) / 2);
     background: linear-gradient(to right, rgba(0,0,0,0.9), 
     rgba(0,0,0,0.5)), url(${ImgNews});
-    height: 100vh;
+    min-height: 100vh;
     height: 100%;
     background-position: center;
     background-size: cover;
@@ -27,7 +27,8 @@ export const FormContainer = styled.div`
     height: 100%;
     width: 100%;
     display: flex;
-    background: #150f0f;
+    background: rgb(57,44,18);
+    background: radial-gradient(circle, rgba(57,44,18,1) 0%, rgba(31,27,21,0.8099440459777661) 100%);
     @media screen and (max-width: 768px) {
         flex-direction: column;
         padding: 0 2rem;
