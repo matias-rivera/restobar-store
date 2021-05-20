@@ -1,9 +1,14 @@
-import styled from 'styled-components/macro'
-import ImgBg from '../../images/hero-big.jpg'
+import { Link } from "react-router-dom";
+import styled from "styled-components/macro";
+import ImgBg from "../../images/hero-big.jpg";
 
 export const HeroContainer = styled.div`
-    background: linear-gradient(to right, rgba(0,0,0,0.7), 
-    rgba(0,0,0,0.1)), url(${ImgBg});
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.1)
+        ),
+        url(${ImgBg});
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -12,7 +17,7 @@ export const HeroContainer = styled.div`
 export const HeroContent = styled.div`
     height: calc(100vh -80px);
     max-height: 100%;
-    padding: 0rem calc((100vw - 1300px) /2);
+    padding: 0rem calc((100vw - 1300px) / 2);
 `;
 
 export const HeroItems = styled.div`
@@ -46,8 +51,10 @@ export const HeroP = styled.p`
     margin-bottom: 2rem;
 `;
 
-export const HeroBtn = styled.button`
+export const HeroBtn = styled(Link)`
     font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
     padding: 1rem 4rem;
     border: none;
     background: #e31837;

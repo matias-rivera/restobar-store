@@ -1,23 +1,16 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
-    background: ${({ scrollNav }) =>
-        scrollNav
-            ? "linear-gradient(180deg, rgba(0,0,0,0.7455182756696428) 0%, rgba(22,18,18,1) 63%)"
-            : "transparent"};
-
-    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: red;
+    background: black;
     position: sticky;
-
-    margin-top: -80px;
     top: 0;
-    z-index: 10;
-
+    height: 80px;
+    z-index: 12;
     @media screen and (max-width: 960px) {
         transition: 0.8s all ease;
     }
@@ -37,7 +30,7 @@ export const Logo = styled.img`
     max-width: 50px;
 `;
 
-export const NavLink = styled(LinkScroll)`
+export const NavLink = styled(Link)`
     color: #fff;
     font-size: 2rem;
     display: flex;
@@ -79,10 +72,10 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-    height: 50px;
+    height: 80px;
 `;
 
-export const NavLinks = styled(LinkScroll)`
+export const NavLinks = styled(Link)`
     color: #fff;
     display: flex;
     align-items: center;
@@ -90,7 +83,6 @@ export const NavLinks = styled(LinkScroll)`
     padding: 0 1rem;
     height: 100%;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
 
     &.active {
         border-bottom: 3px solid #e31837;
@@ -98,39 +90,5 @@ export const NavLinks = styled(LinkScroll)`
 
     &:hover {
         color: #e31837;
-    }
-`;
-
-export const LinksContainer = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-`;
-
-export const NavBtn = styled.nav`
-    display: flex;
-    align-items: center;
-
-    @media screen and (max-width: 768px) {
-        display: none;
-    }
-`;
-
-export const NavBtnLink = styled(Link)`
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-        color: #e31837;
-    }
-
-    @media screen and (max-width: 768px) {
-        display: none;
     }
 `;
